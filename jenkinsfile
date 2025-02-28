@@ -33,7 +33,7 @@ pipeline{
         }
  stage('docker image to docker registry') {
             steps {
-                sh "docker build -t suhanad14/java1.1 ."
+                sh "docker push suhanad14/java1.1"
             }
         }
 }
